@@ -1,0 +1,147 @@
+body{
+    overflow-x: hidden;
+    font-size: 1.5rem;
+    /* lol get pranked */
+    font-family: "Impact";
+    background: rgb(240, 240, 240);
+    color: rgb(0, 100, 200);
+}
+
+q{
+    text-align: right;
+    font-style: italic;
+    display: block;
+    margin-bottom: 1rem;
+    margin-right: -8px;
+}
+
+.iDontLikeFlex{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.words{
+    font-size: 2rem;
+    font-style: italic;
+    text-align: right;
+}
+
+h1{
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    text-align: right;
+    font-size: 5rem;
+}
+
+.bordeaux{
+    background: rgb(10, 240, 50);
+}
+
+.animalPic{
+    background: url("https://assets.simpleviewinc.com/simpleview/image/fetch/c_limit,q_80,w_1200/https://assets.simpleviewinc.com/simpleview/image/upload/crm/eurekaca/patterson.gimlin0-b5b6c02e5056a36_b5b6c19f-5056-a36a-096e6e95925c7427.jpg");
+}
+
+.hockey{
+    background: url('https://img.freepik.com/free-photo/portrait-male-model-performing-pole-dance_23-2148411991.jpg?size=626&ext=jpg');
+}
+
+.khal{
+    background: url('https://upload.wikimedia.org/wikipedia/en/b/b4/PrincessTwilightSparkle.png');
+}
+
+.keanu{
+    background: url('https://pbs.twimg.com/profile_images/1014129273249157121/RRvOshCk_400x400.jpg');
+}
+
+.cedric{
+    background: url("https://avatars.githubusercontent.com/u/547002?v=4");
+    background-position: right!important;
+}
+
+.backgroundImage{
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.fullHeight{
+    height: 60vh;
+    margin-bottom: 15rem;
+    min-height: 300px;
+}
+
+.challengeContainer{
+    border: 1px solid grey;
+    height: 70vh;
+}
+
+#ball{
+    background: #61091C;
+    width: 100px;
+    height: 100px;
+    margin-left: calc(50% - 50px);
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+.description{
+    padding: 100px 150px;
+}
+
+.challengeContainer{
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 1200px) {
+    .cedric {
+        background-position: center!important;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .cedric {
+        min-height: 500px;
+        margin-top: 2rem;
+    }
+
+    .yikes{
+        margin-bottom: 300px!important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        padding: 0 5px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .picture{
+        min-height: 300px;
+        background-size: 100% auto;
+        margin-bottom: 2rem;
+    }
+
+    .fullHeight{
+        margin-bottom: 7rem;
+        height: 100vh!important;
+    }
+
+    .lolImCheatingSoHard{
+        height: 60vh!important;
+    }
+
+    .topPosition{
+        background-position: top;
+    }
+
+    .description, .challengeText{
+        padding: 0!important;
+    }
+}
+
+.challengeText{
+    padding: 0 150px;
+    margin-bottom: 2rem;
+}
