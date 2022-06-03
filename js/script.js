@@ -1,11 +1,22 @@
 //Change the background color of the body
 document.body.style.backgroundColor = "#000";
 
+let quote = document.getElementsByTagName('q');
+
+quote[0].addEventListener('mouseover', function () {
+    document.body.style.fontFamily = "Roboto, sans-serif";
+    document.body.style.fontWeight = "800";
+    document.body.style.fontStyle = "italic";
+})
+
 //Center the header
 let header = document.getElementsByTagName('header');
 header[0].style.display = "flex";
 header[0].style.flexDirection = "column";
 header[0].style.alignItems = "center";
+
+let headerRow = document.querySelector('.fullHeight');
+headerRow.style.width = "100%";
 
 
 
