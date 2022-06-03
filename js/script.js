@@ -66,6 +66,27 @@ sportPicture.addEventListener('mouseover', function (){
 //Change favourite character
 let charDescription = document.getElementById('characterDescription');
 let charPicture = document.querySelector('.khal');
+let charButton = document.createElement("button");
+charButton.innerHTML = "My nieces made me watch it!"
+charButton.addEventListener('click', function (){
+    charDescription.innerText = "No really! They made me watch it when i was still an innocent child! My favourite character is actually 'Luffy' from One Piece. Why?! Because I grew up loving everything about pirates, so anime and pirates, I mean come on!"
+    charPicture.style.background = "url(img/luffy.gif)";
+    charPicture.style.backgroundRepeat = "no-repeat";
+    charPicture.style.backgroundPosition = "center";
+    charPicture.style.backgroundSize = "auto 100%";
+})
+charDescription.appendChild(charButton);
+
+//Change favourite celebrity
+let celebDescription = document.getElementById('celebrityDescription');
+let celebPicture = document.querySelector('.keanu');
+celebPicture.addEventListener('mouseover', function (){
+    celebDescription.innerText = "What a representative for a healthy lifestyle in Belgium. I mean for our international view about health we couldn't have a chosen a better person, I agree... But anyhow I'm not a person who really has a celebrity crush or whatever, to me they are also just people like you and I. But since we have to choose one I would go with Nick Offerman."
+    celebPicture.style.background = "url(img/nickOfferman.gif)";
+    celebPicture.style.backgroundRepeat = "no-repeat";
+    celebPicture.style.backgroundPosition = "center";
+    celebPicture.style.backgroundSize = "auto 30%";
+})
 
 // Handler 1
 function createGrowingCircle (event) {
@@ -76,15 +97,18 @@ function createGrowingCircle (event) {
     // Styling
     newDiv.style.width = "0";
     newDiv.style.height = "0";
-    newDiv.style.border = "2px solid #000";
+    newDiv.style.border = "2px solid #fff";
+    newDiv.style.backgroundColor = "blue"
     newDiv.style.borderRadius = "50%";
     newDiv.style.alignItems = "center";
     newDiv.style.position = "absolute";
+    newDiv.style.overflow = "hidden";
     newDiv.style.left = event.pageX + "px";
     newDiv.style.top = event.pageY + "px";
 
     //add the newly created element and its content to the DOM
     const currentDiv = document.querySelector('.challengeContainer');
+    currentDiv.style.overflow = "hidden";
     currentDiv.appendChild(newDiv);
 
     function growCircle (radius) {
