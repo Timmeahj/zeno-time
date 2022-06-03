@@ -1,4 +1,17 @@
-function addCircle (event) {
+//Change the background color of the body
+document.body.style.backgroundColor = "#000";
+
+//Center the header
+let header = document.getElementsByTagName('header');
+header[0].style.display = "flex";
+header[0].style.flexDirection = "column";
+header[0].style.alignItems = "center";
+
+
+
+
+// Handler 1
+function createGrowingCircle (event) {
     // create new div
     const newDiv = document.createElement("div");
 
@@ -26,10 +39,15 @@ function addCircle (event) {
             newDiv.style.height = radius * 2 + "px";
         }, 0);
     }
-    growCircle(200);
+    growCircle(245);
 }
 
 // CHALLENGE CONTAINER
 const challengeContainer = document.querySelector('.challengeContainer');
+const heightContainer = challengeContainer.offsetHeight;
+const widthContainer = challengeContainer.offsetWidth;
+console.log(heightContainer);
+console.log(widthContainer);
 
-challengeContainer.addEventListener('click', addCircle);
+// Event Listener
+challengeContainer.addEventListener('click', createGrowingCircle);
